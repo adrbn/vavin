@@ -1,4 +1,5 @@
-Copyright 2026 adrbn (https://github.com/adrbn/vavin)
+Copyright 2026 adrbn (https://github.com/adrbn/vavin),
+with Reserved Font Name "Vavin".
 
 Vavin is a modified version of EB Garamond. The original notices are
 retained below, as required by clause 1 of this licence.

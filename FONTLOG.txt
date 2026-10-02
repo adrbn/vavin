@@ -41,7 +41,8 @@ Garamond's: Latin, Greek and Cyrillic, 2091 code points in the upright text
 styles. Hyperglot 0.8.1 counts 503 Latin-script and 83 Cyrillic-script
 languages as supported by Vavin Regular.
 
-No Reserved Font Name is declared, so modified versions may keep the name.
+From version 1.1, "Vavin" is a Reserved Font Name: modified versions must
+be renamed (OFL clause 3).
 
 
 Information for Contributors
@@ -63,6 +64,14 @@ correction of the letters the automated transform can only approximate - see
 
 ChangeLog
 ---------
+
+2 October 2026 (adrbn) Vavin v1.1
+- Declared "Vavin" as a Reserved Font Name, in OFL.txt and in name ID 0 of
+  every font. Modified versions must use another name. Outlines, metrics and
+  coverage are unchanged from v1.0.
+- Vavin Display Black now has its own legacy family name ("Vavin Display
+  Black", subfamily Regular) with typographic names (IDs 16/17), so Windows
+  no longer sees two "Vavin Display Regular" fonts.
 
 2 October 2026 (adrbn) Vavin v1.0
 - Three families and nine styles instead of one family of two: Vavin

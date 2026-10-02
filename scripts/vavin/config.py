@@ -21,7 +21,7 @@ FAMILY_NAME = "Vavin"
 FAMILY_NAME_PS = "Vavin"
 
 VERSION_MAJOR = 1
-VERSION_MINOR = 0
+VERSION_MINOR = 1
 
 DESIGNER = "adrbn"
 DESIGNER_URL = "https://github.com/adrbn"
@@ -29,7 +29,8 @@ PROJECT_URL = "https://github.com/adrbn/vavin"
 VENDOR_ID = "AURA"  # 4 chars max, OS/2 achVendID
 
 COPYRIGHT = (
-    f"Copyright 2026 adrbn ({PROJECT_URL}). "
+    f"Copyright 2026 adrbn ({PROJECT_URL}), "
+    f'with Reserved Font Name "Vavin". '
     f"Derived from EB Garamond, "
     f"Copyright 2017 The EB Garamond Project Authors "
     f"(https://github.com/octaviopardo/EBGaramond12)."

@@ -78,7 +78,7 @@ make serve      # the specimen at http://localhost:8731
 make check      # per-glyph checks on every built font
 make qa         # FontBakery on Vavin AND upstream, diffed
 make install    # into ~/Library/Fonts
-make zip        # release/Vavin-v1.0.zip
+make zip        # release/Vavin-v1.1.zip
 make readme-art # the SVGs in docs/assets/
 ```
 
@@ -449,7 +449,7 @@ the bundle and surface `Vavin.licenceNotice` in the acknowledgements screen.
 ## Publishing
 
 ```bash
-make release      # rebuild, check, then release/Vavin-v1.0.zip
+make release      # rebuild, check, then release/Vavin-v1.1.zip
 ```
 
 To submit to Google Fonts: open an issue on

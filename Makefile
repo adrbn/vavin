@@ -10,7 +10,7 @@
 #   make qa         FontBakery on Vavin AND upstream, diffed
 #   make install    install into ~/Library/Fonts (macOS)
 #   make ufo        Track B - editable UFO sources
-#   make release    rebuild, check, then zip release/Vavin-v1.0.zip
+#   make release    rebuild, check, then zip release/Vavin-v1.1.zip
 #   make zip        zip what is already in dist/
 #   make readme-art regenerate the SVGs in docs/assets/
 #   make clean

@@ -146,8 +146,35 @@ choice:
 3. It removes any argument that you are misrepresenting the upstream authors'
    work - which is the RFN's purpose even when it is not enforced.
 
-Vavin also **does not** declare a Reserved Font Name of its own, for the
-same reason Google Fonts doesn't: it should stay easy to fork.
+### Vavin's own Reserved Font Name
+
+From version 1.1, Vavin **does** declare one: `OFL.txt` opens with
+`Copyright 2026 adrbn (https://github.com/adrbn/vavin), with Reserved Font
+Name "Vavin".`, and the same phrase is in name ID 0 of every font. Under OFL
+clause 3, a modified version may no longer use "Vavin" in its name. Anyone may
+still fork, change and redistribute the fonts; they must call the result
+something else. The copyright holder of a modification may add an RFN for
+their own work; EB Garamond declared none, so there is no upstream name to
+respect beyond renaming, which section 4 already did.
+
+Version 1.0 was released on 2 October 2026 without an RFN. Copies of 1.0
+keep the terms they were released under: the OFL is irrevocable for what it
+has already granted. The RFN binds 1.1 and everything after it.
+
+### What the OFL does not allow, even with an RFN
+
+The RFN protects the **name**, not the fonts. Two things are out of reach for
+any font derived from EB Garamond, whatever its copyright holder wants:
+
+- **Another licence.** Clause 5: a modified version must be distributed
+  entirely under the OFL. Vavin cannot be relicensed as a commercial font.
+- **Selling the fonts themselves.** Clause 1: the font software may not be
+  sold by itself. Bundling with real software (an app such as Aura) is
+  allowed; selling a font next to a token program to get around clause 1 is
+  not, per the OFL FAQ.
+
+A paid, proprietary typeface would need outlines that do not come from EB
+Garamond: a new design, drawn from scratch.
 
 ## 6. What the OFL requires of Vavin
 

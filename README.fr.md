@@ -56,7 +56,7 @@ le navigateur, est sur **[adrbn.github.io/vavin](https://adrbn.github.io/vavin/)
 
 ## Installation
 
-Téléchargez `Vavin-v1.0.zip` depuis la [dernière version](https://github.com/adrbn/vavin/releases/latest). Chaque
+Téléchargez `Vavin-v1.1.zip` depuis la [dernière version](https://github.com/adrbn/vavin/releases/latest). Chaque
 famille a trois dossiers : `ttf/` (jeu de caractères complet, pour l'ordinateur), `app/` (sous-ensemble latin, à
 embarquer) et `web/` (WOFF2).
 
@@ -144,7 +144,7 @@ make fonts      # construit les neuf polices et leurs sous-ensembles latins
 make specimen   # range dist/ par famille, écrit les WOFF2 et les fichiers du spécimen
 make check      # contrôles glyphe par glyphe sur chaque police
 make qa         # FontBakery sur Vavin et sur EB Garamond, comparés
-make zip        # release/Vavin-v1.0.zip
+make zip        # release/Vavin-v1.1.zip
 make readme-art # régénère les SVG de docs/assets/
 ```
 
@@ -166,8 +166,10 @@ commercial ou non, l'embarquer dans des applications et des documents, la modifi
 chose interdite est de vendre les polices seules. Copyright 2026 adrbn, avec le copyright d'EB Garamond conservé
 comme la licence l'exige.
 
-Vavin ne déclare **aucun nom de fonte réservé** : une version modifiée peut garder le nom. Elle dérive d'EB Garamond
-seulement ; elle ne contient aucune donnée d'ITC Garamond ni d'aucune autre police propriétaire, et n'en reprend
+**« Vavin » est un nom de fonte réservé** (depuis la version 1.1) : vous pouvez modifier et redistribuer les polices,
+mais une version modifiée doit porter un autre nom. L'OFL rend Vavin libre pour de bon : elle ne peut être ni placée
+sous une autre licence ni vendue seule, car la licence d'EB Garamond s'étend à tout ce qui en dérive. Vavin dérive
+d'EB Garamond seulement ; elle ne contient aucune donnée d'ITC Garamond ni d'aucune autre police propriétaire, et n'en reprend
 qu'une proportion, qui est un fait et non un dessin protégé. [LEGAL.md](LEGAL.md) (en anglais) détaille les sources,
 les obligations de la licence et la vérification du nom auprès des registres de marques.
 

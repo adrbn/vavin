@@ -55,7 +55,7 @@ The full specimen, with every style live in the browser, is at **[adrbn.github.i
 
 ## Install
 
-Download `Vavin-v1.0.zip` from the [latest release](https://github.com/adrbn/vavin/releases/latest). Each family has
+Download `Vavin-v1.1.zip` from the [latest release](https://github.com/adrbn/vavin/releases/latest). Each family has
 three folders: `ttf/` (full character set, for desktop use), `app/` (Latin subset, for embedding) and `web/` (WOFF2).
 
 **macOS.** Open the `.ttf` files and click *Install Font* in Font Book, or copy them to `~/Library/Fonts`.
@@ -135,7 +135,7 @@ make fonts      # build the nine fonts and their Latin subsets
 make specimen   # sort dist/ by family, write the WOFF2 and the specimen assets
 make check      # per-glyph checks on every font
 make qa         # FontBakery on Vavin and on EB Garamond, diffed
-make zip        # release/Vavin-v1.0.zip
+make zip        # release/Vavin-v1.1.zip
 make readme-art # regenerate the SVGs in docs/assets/
 ```
 
@@ -156,7 +156,9 @@ Vavin is licensed under the [SIL Open Font License 1.1](OFL.txt). You may use it
 embed it in apps and documents, modify it and redistribute it. The one thing you may not do is sell the fonts on
 their own. Copyright 2026 adrbn, with the EB Garamond copyright retained as the licence requires.
 
-Vavin declares **no Reserved Font Name**, so a modified version may keep the name. It is derived from EB Garamond
+**"Vavin" is a Reserved Font Name** (from version 1.1): you may modify and redistribute the fonts, but a modified
+version must be given another name. The OFL makes Vavin free for good: it can neither be relicensed nor sold on its
+own, because EB Garamond's licence carries over to everything derived from it. Vavin is derived from EB Garamond
 only; it contains no data from ITC Garamond or any other proprietary typeface, and borrows only a proportion, which is
 a fact rather than a protected design. [LEGAL.md](LEGAL.md) sets out the sources, the licence obligations and the
 trademark screening of the name.
