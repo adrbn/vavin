@@ -1,0 +1,126 @@
+FONTLOG for Vavin
+====================
+
+This file provides detailed information on the Vavin font software. This
+information should be distributed along with the Vavin fonts and any
+derivative works, as required by the SIL Open Font License.
+
+
+Basic Font Information
+----------------------
+
+Vavin is an old-style serif for sustained reading at small optical sizes on
+screen. It takes the skeleton of a French Renaissance roman and gives it an
+unusually large x-height - a ratio of x-height to cap-height of 0.72, against
+the 0.60 to 0.64 typical of Garamond revivals - so that a line of text carries
+more ink and reads larger at the same nominal size.
+
+It is a modification of EB Garamond by Georg Duffner and Octavio Pardo, made
+under the terms of the SIL Open Font License. EB Garamond does not declare a
+Reserved Font Name; the family was renamed regardless, so that the two fonts
+cannot be confused and so that neither project's identity depends on the
+other.
+
+Vavin is named after the rue Vavin, in the sixth arrondissement of Paris. The
+street runs down to the Vavin crossroads, the centre of Montparnasse, where
+between the wars the writers and painters of the quarter worked in the cafes
+on its corners - Le Select, La Rotonde, Le Dome. A face made for reading,
+named after a place where people read.
+
+The vermilion in the specimen is the rubricator's red: the second colour
+printers have used to mark a text since the earliest printed books.
+
+Vavin is NOT derived from, and contains no data from, ITC Garamond or any
+other proprietary typeface. Its proportions were set from published specimen
+figures; its outlines come from EB Garamond alone. See LEGAL.md.
+
+Nine static styles in three families: Vavin (Regular, Italic, Bold, Bold
+Italic) for text, Vavin Condensed (Regular, Italic, Bold) for headlines, and
+Vavin Display (Regular, Black) for large sizes. The character set is EB
+Garamond's: Latin, Greek and Cyrillic, 2091 code points in the upright text
+styles. Hyperglot 0.8.1 counts 503 Latin-script and 83 Cyrillic-script
+languages as supported by Vavin Regular.
+
+No Reserved Font Name is declared, so modified versions may keep the name.
+
+
+Information for Contributors
+----------------------------
+
+Vavin is released under the SIL Open Font License. See OFL.txt.
+
+The build is fully scripted and reproducible from the upstream binary:
+
+    make setup upstream fonts specimen check qa
+
+See docs/TECHNICAL.md for how the x-height transform works and which knobs
+exist.
+
+Contributions are welcome. The most valuable work at this stage is hand
+correction of the letters the automated transform can only approximate - see
+"Known limitations" in docs/TECHNICAL.md.
+
+
+ChangeLog
+---------
+
+2 October 2026 (adrbn) Vavin v1.0
+- Three families and nine styles instead of one family of two: Vavin
+  Regular, Italic, Bold and Bold Italic; Vavin Condensed Regular, Italic and
+  Bold; Vavin Display Regular and Black.
+- x-height 468 units on a 1000 unit em in Vavin Regular, an x-height to
+  cap-height ratio of 0.719 (EB Garamond: 405 and 0.620). Display: 0.758.
+- Italics remapped with a shear-aware transform, so slanted stems keep their
+  angle (-17.2 degrees) instead of folding where the remap compresses them.
+- A directional contrast filter thins hairlines without changing widths:
+  stroke contrast 2.29 in Vavin Regular (EB Garamond 2.21), 2.05 in
+  Condensed, 3.24 in Display Regular.
+- Accent lift computed per base glyph, with component offsets and GPOS mark
+  anchors moved together.
+- Name table identity: designer adrbn, vendor URL
+  https://github.com/adrbn/vavin. OS/2 xAvgCharWidth recomputed.
+- FontBakery (check-universal, the four Vavin styles, diffed against
+  upstream at the same weights): 7 findings inherited from EB Garamond,
+  5 fixed, 1 introduced (WARN overlapping_path_segments).
+
+14 August 2026 (adrbn) Vavin v0.1
+- Initial release, forked from EB Garamond v3.005 as distributed by Google
+  Fonts (google/fonts, ofl/ebgaramond).
+- Raised the lowercase x-height from 405 to 470 units on a 1000 unit em,
+  taking the x-height to cap-height ratio from 0.620 to 0.720. Capitals,
+  ascender height and descender proportion are unchanged.
+- Widened the lowercase by 3.5% and added 4 units of sidebearing per side to
+  compensate for the optical crowding a taller x-height causes.
+- Rebuilt vertical metrics as a single coherent set shared by both styles:
+  hhea equal to OS/2 sTypo, line gap zero, USE_TYPO_METRICS set, usWin
+  covering the family's real ink. Line height is 1.200 em.
+- Refreshed OS/2 sxHeight and sCapHeight, which upstream shipped as 400 and
+  650 against a real 405 and 653.
+- Rescaled kerning and moved GPOS mark anchors to match the new x-height, so
+  decomposed input positions accents identically to the precomposed glyphs.
+- Renamed the family end to end; removed all Macintosh platform name records.
+- Verified to introduce no new FontBakery findings relative to upstream.
+
+
+Acknowledgements
+----------------
+
+When contributing, please add your name here.
+
+N: Georg Duffner
+E: (see upstream repository)
+W: https://github.com/georgd/EB-Garamond
+D: Original designer of EB Garamond, on which Vavin is based
+
+N: Octavio Pardo
+E: (see upstream repository)
+W: https://github.com/octaviopardo/EBGaramond12
+D: Extended EB Garamond to its current weight range and character set
+
+N: Deborah Khodanovich
+D: RCS citation glyphs in EB Garamond
+
+N: adrbn
+W: https://github.com/adrbn
+D: Modified EB Garamond into Vavin: x-height transform, respacing,
+   metrics and packaging
